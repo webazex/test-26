@@ -19,6 +19,7 @@
 
 # Configuration
 wp-config.php
+creds.md
 
 # Example themes
 /wp-content/themes/twenty*/
