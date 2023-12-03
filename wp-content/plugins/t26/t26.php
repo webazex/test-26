@@ -19,4 +19,21 @@
  * Version:     1.0
  */
 
-// код плагина
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+require_once 'autoload.php';
+use T26\App\App\App as App;
+App::adminPage();
+function activated(){
+	add_action('admin_menu', function (){
+
+	});
+}
+
+function deactivated(){
+
+}
+register_activation_hook( __FILE__, 'activated' );
+register_deactivation_hook( __FILE__, 'deactivated' );
