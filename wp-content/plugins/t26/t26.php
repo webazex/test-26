@@ -23,9 +23,7 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-require_once 'autoload.php';
-use T26\App\App as App;
-App::adminPage();
+
 function activated(){
 	add_action('admin_menu', function (){
 
