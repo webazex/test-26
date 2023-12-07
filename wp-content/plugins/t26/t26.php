@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Plugin Name: Тестовое № 26
- * Description: Тестовое №26. Плагин конвертации валют
+ * Plugin Name: Тестове № 26
+ * Description: Плагін конвертаціївалют
  * Plugin URI:  https:\\latul.website
  * Author URI:  https:\\latul.website
  * Author:      Webazex
@@ -23,7 +23,8 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-
+use T26\App\App as App;
+App::test();
 function activated(){
 	add_action('admin_menu', function (){
 
