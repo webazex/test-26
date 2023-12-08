@@ -18,13 +18,12 @@
  * Network:     false
  * Version:     1.0
  */
-
+require_once 'App.php';
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-use T26\App\App as App;
-App::test();
+App::init();
 function activated(){
 	add_action('admin_menu', function (){
 
